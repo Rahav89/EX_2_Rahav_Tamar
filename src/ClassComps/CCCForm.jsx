@@ -29,7 +29,7 @@ export default class FormGrade extends Component {
     }
 
     funBlurGrade = (e) => {
-        let gr = e.target.value;
+        let gr = Number(e.target.value);
         if (gr > 555) {
             this.setState({ messGrade: "You have been accepted for college!" });
         } else if (gr === "") {
